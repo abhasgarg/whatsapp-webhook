@@ -25,6 +25,7 @@ app.get("/webhook", (req, res) => {
 app.post("/webhook", async (req, res) => {
   try {
     const body = req.body;
+    console.log("FULL BODY:", JSON.stringify(body, null, 2));
 
     // Check if this is a real message
     if (
