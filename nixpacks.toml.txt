@@ -1,0 +1,11 @@
+[start]
+cmd = "npm start"
+```
+
+This explicitly tells Railway how to start your app.
+
+## Alternative fix: Add a Procfile
+
+If the above doesn't work, try adding a file called **Procfile** (no extension, capital P) with this single line:
+```
+web: node index.js
